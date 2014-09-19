@@ -1,0 +1,7 @@
+   ./ext_skel  --extname=algo --proto=algo.def
+   vim config.m4 
+   phpize
+   ./configure
+   make
+   nm modules/algo.so
+   php -c myphp2.ini algo.php

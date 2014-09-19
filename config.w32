@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("algo", "for algo support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("algo", "enable algo support", "no");
+
+if (PHP_ALGO != "no") {
+	EXTENSION("algo", "algo.c");
+}
+
